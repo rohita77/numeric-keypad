@@ -1,0 +1,95 @@
+/* src/Keypad.css */
+.keypad-modal {
+  position: fixed;
+  top: 0;
+  left: 30;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: backgroundAnimation 10s infinite;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-color: #000;
+  }
+  50% {
+    background-color: #333;
+  }
+  100% {
+    background-color: #000;
+  }
+}
+
+.keypad {
+  width: 500px;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.keypad button {
+  padding: 15px;
+  font-size: 1.5rem;
+  transition: background-color 0.5s, transform 0.5s;
+  background-color: gray;
+  color: darkgray; /* Button text color */
+  transform: scale(1.03); /* Slightly enlarge the button */
+  filter: blur(2px); /* Apply blur effect */
+}
+
+.keypad button:active {
+  background-color: #ccc; /* Change color on press */
+}
+
+.keypad button:not(:disabled):hover {
+  background-color: black;
+  cursor: pointer;
+  filter: blur(0px); /* Remove blur effect */
+}
+
+.keypad button.submit:not(:disabled) {
+  background-color: green; /* Change color for submit button */
+  filter: blur(0px); /* Remove blur effect for submit button */
+}
+
+.keypad button.clear:not(:disabled) {
+  background-color: red; /* Change color for clear button */
+  filter: blur(0px); /* Remove blur effect for clear button */
+}
+
+.pin-display {
+  margin-top: 3px;
+  font-size: 2rem;
+  text-align: center;
+  background-color: cyan;
+}
+
+button[disabled] {
+  background: grey;
+  cursor: not-allowed;
+}
+
+.password-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.password-overlay .form-control {
+  margin-bottom: 10px;
+}
