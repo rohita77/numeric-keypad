@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/numeric-keypad/static/css/main.4802aac3.css",
+    "main.js": "/numeric-keypad/static/js/main.6af4016d.js",
+    "index.html": "/numeric-keypad/index.html",
+    "main.4802aac3.css.map": "/numeric-keypad/static/css/main.4802aac3.css.map",
+    "main.6af4016d.js.map": "/numeric-keypad/static/js/main.6af4016d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4802aac3.css",
+    "static/js/main.6af4016d.js"
+  ]
+}
