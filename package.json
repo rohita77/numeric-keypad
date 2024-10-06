@@ -1,4 +1,5 @@
 {
+  "homepage": "https://<username>.github.io/<repository-name>",
   "name": "react",
   "version": "1.0.0",
   "description": "",
