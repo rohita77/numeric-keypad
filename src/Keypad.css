@@ -31,6 +31,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
+  width: 400px
 }
 
 .keypad button {
@@ -40,7 +41,7 @@
   background-color: gray;
   color: darkgray; /* Button text color */
   transform: scale(1.03); /* Slightly enlarge the button */
-  filter: blur(2px); /* Apply blur effect */
+  filter: blur(1px); /* Apply blur effect */
 }
 
 .keypad button:active {
